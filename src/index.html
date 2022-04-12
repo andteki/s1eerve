@@ -8,22 +8,30 @@
 <body>
     <h1>Érvényesítés</h1>
 
-    <form action="signupForm">
+    <form action="signupForm" id="signupForm">
         <label for="user">Felhasználónév</label>
-        <input id="user"><br>
+        <input id="user" required minlength="3"
+        name="user"><br>
 
         <label for="email">E-mail</label>
-        <input id="email"><br>
+        <input id="email" required type="email"
+        name="email"><br>
         
         <label for="pass">Jelszó</label>
-        <input id="pass" type="password"><br>
+        <input id="pass" type="password" required minlength="5"
+        name="pass"><br>
 
         <label for="confirm_pass">Jelszó újra</label>
-        <input id="confir_pass" type="password"><br>
+        <input id="confirm_pass" type="password" required minlength="5"
+        name="confirm_pass"><br>
 
         <button>Regisztrál</button>
     </form>
 
+    <script src="jquery.js"></script>
+    <script src="jquery.validate.js"></script>
+    <script src="localization/messages_hu.js"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>

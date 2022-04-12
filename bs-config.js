@@ -26,7 +26,11 @@ module.exports = {
     "watchOptions": {
         "ignoreInitial": true
     },
-    "server": ["src"],
+    "server": [
+        "src", 
+        "node_modules/jquery/dist",
+        "node_modules/jquery-validation/dist"
+    ],
     "proxy": false,
     "port": 3000,
     "middleware": false,
